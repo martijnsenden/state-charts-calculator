@@ -4,6 +4,16 @@
         "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {},
-    "rulesDirectory": []
+    "rules": {
+        "quotemark": [true, "single"]
+    },
+    "rulesDirectory": [],
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/tests/**/*.ts",
+        "**/*.spec.ts"
+    ]
 }

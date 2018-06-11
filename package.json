@@ -9,11 +9,15 @@
     "calculator"
   ],
   "scripts": {
-    "test": "jest"
+    "lint": "yarn tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "pretest": "yarn lint",
+    "test": "yarn jest"
   },
   "devDependencies": {
+    "@types/jest": "^23.0.0",
     "fuse-box": "^3.2.2",
     "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
     "tslint": "^5.10.0",
     "typescript": "^2.9.1",
     "uglify-es": "^3.3.9",
